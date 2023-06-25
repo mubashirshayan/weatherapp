@@ -7,8 +7,9 @@ body{
 }
 
 .container{
-    /* background-image: linear-gradient(120deg,rgb(93, 183, 224),rgb(150, 173, 20)); */
-    background-image: linear-gradient(120deg,rgb(127, 204, 240),rgb(37, 142, 168));
+    /* background-image: linear-gradient(120deg,rgb(250, 230, 176),rgb(255, 199, 47)); */
+    background-image: linear-gradient(120deg,rgb(93, 183, 224),rgb(184, 202, 80));
+    /* background-image: linear-gradient(120deg,rgb(127, 204, 240),rgb(105, 203, 228)); */
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -18,7 +19,7 @@ body{
 .main{
     height: 600px;
     width: 350px;
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 10px;
 
 }

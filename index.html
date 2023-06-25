@@ -3,113 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather app</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
 <body>
     <div class="container">
-        <div class="heading1">
-            <h1>Rich Text Editor</h1>
-        </div>
         <div class="main">
-            <div class="nav">
-                <div class="bold box">
-                    <div>
-                        <p>Font style</p>
-                    </div>
-                    <button class="allButton" type="button" onclick="bold()"><i class="fa-solid fa-bold"></i></button>
-                    <button class="allButton" type="button" onclick="italic()"><i class="fa-solid fa-italic"
-                            style="color: #050505;"></i></button>
-                    <button class="allButton" type="button" onclick="underLine()"><i class="fa-solid fa-underline"
-                            style="color: #000000;"></i></button>
-
-                </div>
-                <div class="alignment box">
-                    <div>
-                        <p>Alignment</p>
-                    </div>
-                    <button class="allButton" type="button" onclick="left()"><i class="fa-solid fa-align-left"
-                            style="color: #000000;"></i></button>
-                    <button class="allButton" type="button" onclick="center()"><i class="fa-solid fa-align-center"
-                            style="color: #0f0f0f;"></i></button>
-                    <button class="allButton" type="button" onclick="right()"><i class="fa-solid fa-align-right"
-                            style="color: #141414;"></i></button>
-                </div>
-                <div class="fontsixe fontbox">
-                    <div>
-                        <p>Font size
-                    </div>
-                    <input type="number" class="input" id="input">
-                    <button class="apply" onclick="size()">Apply</button>
-                </div>
-                <div class="fontsixe fontbox">
-                    <div>
-                        <p>Fontcolor
-                    </div>
-                    <input type="color" name="" id="fontcolor" onclick="color()">
-                </div>
-
-                <!-- <input type="color" name="" id="fontcolor" onclick="color()">
-                    <select name="" id="select">
-                        <option value=""></option>
-                        <option value="a">serif</option>
-                        <option value="b">mono serif</option>
-                        <option value="c">arial</option>
-                    </select> -->
-
-            </div>
-        </div>
-        <div class="main2">
-            <div class="nav2">
-                <div class=" box1">
-                    <div>
-                        <p>BackgroundColor</p>
-                    </div>
-                    
-                   
-     <input type="color" name="" id="backcolor" onclick="backcolor()"> <i class="fa-solid fa-fill-drip allButton" style="color: #050505;"></i>
+            <div class="input">
+                <input type="text" id="input" value="Please enter city">
+                     <button onclick="search()">
+                        <!-- <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> --> 
+                        <img src="images/search2.svg" alt="" id="searchpic"> 
+                    </button>
                 
-    </div>
-                <div class="box1">
-                    <div><p>FontFamily</p></div>
-                    <select name="" id="selectOpt" onchange="selOpt()">
-                        <option value="">select family</option>
-                        <option value="serif">serif</option>
-                        <option value="sans-serif">sans-serif</option>
-                        <option value="monospace">monospace</option>
-                        <option value="arial">arial</option>
-                        <option value="inherit">inhirit</option>
-                    </select> 
-                </div>
-                <!-- <div class=" box1">
-                    <div>
-                        <p>BackgroundColor</p>
-                    </div>
-                    
-                   <button id="inputButton" onclick="list()"><i class="fa-solid fa-list-ol" style="color: #050505;"></i></button>
-                   <button id="inputButton" onclick="list()"><i class="fa-solid fa-list-ul" style="color: #050505;"></i></button>
-                </div> -->
-                <!-- <div class=" box1">
-                    <div>
-                        <input type="file" name="" id="file">
-                    </div>
-                </div> -->
+           
             </div>
-        </div>
-        <div class="area">
-            <textarea name="" id="area" class="textarea"></textarea>
-        </div>
+            <div class="countryname">
+                <h1 id="cityname"></h1>
+                <h2 id="country_name"></h2>
+                <p id="day"></p><p id="date"></p><span id="tarikh" ></span>
+            </div>
+            <div class="temp">
+                <div  id="imgMain" class="main_img">
+                    <!-- <img id="mainImg" class="mainimg" src="" alt=""> -->
+                </div>
 
-    </div>
-    <div class="footercontainer">
-        <div class="footer">
-            <p class="p">All Copy Right are Reserved by Mubashir Shayan</p>
+                <div class="currentTemp">
+                    <div>
+                    <h1 id="temp"></h1>
+                     <p id="system"></p>
+                     <p id="feel"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clouds">
+                <div class="cloud_img">
+                    <img src="images/cloudy.svg" alt="" class="imgwind">
+                    <p>Cloud</p>
+                </div>
+                <div class="cloud_text">
+                    <p id="cloud_text"></p>
+                </div>
+            </div>
+            <div class="wind">
+                <div class="wind_img"> 
+                    <img src="images/wind.svg" alt="" class="imgwind"><p class="para">Wind</p>
+                </div>
+
+
+                <div class="wind_text">
+                    <p id="wind_text"></p>
+                </div>
+            </div>
+            <div class="humadity">
+                <div class="humadity_img">
+                    <img src="images/4148460.png" height="20px" width="20px" id="pic" alt=""  class="imgwind">
+                    <p>Humadity</p>
+                </div>
+                <div class="humadity_text">
+                    <p id="humadity_text"></p>
+                </div>
+            </div>
+
         </div>
     </div>
     <script src="app.js"></script>

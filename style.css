@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    /* background-image: linear-gradient(120deg,rgb(93, 183, 224),rgb(150, 173, 20)); */
+    background-image: linear-gradient(120deg,rgb(127, 204, 240),rgb(37, 142, 168));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 600px;
+    width: 350px;
+    border: 5px solid white;
+    border-radius: 10px;
+
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+#input{
+    height: 25px;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+#searchpic{
+    height:20px ;
+    width: 30px;
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+}
+.countryname{
+    margin: 10px;
+}
+.temp{
+    display: flex;
+}
+.main_img{
+    height: 150px;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.currentTemp{
+    height: 150px;
+    width: 50%;
+    background-color: none;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+   margin-right: 10px;
+    
+
+}
+.mainimg{
+    height: 200px;
+    width: 100px;
+}
+  /* Details styling */
+.clouds{
+    display: flex;
+    margin: 10px;
+    margin-left: 30px;
+
+  
+}
+.wind{
+    display: flex;
+    margin: 10px;
+    margin-left: 30px;
+}
+.humadity{
+    display: flex;
+    margin: 10px;
+    margin-left: 30px;
+  
+}
+.cloud_img{
+    height: 50px;
+    width: 50%;
+    background-color:  rgb(168, 227, 255);
+    display: flex;
+    align-items: center;
+   
+}
+.cloud_text{
+    height: 50px;
+    width: 40%;
+    background-color: rgb(168, 227, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wind_img{
+    height: 50px;
+    width: 50%;
+    background-color:   rgb(39, 167, 199);
+    display: flex;
+    align-items: center;
+}
+.wind_text{
+    height: 50px;
+    width: 40%;
+    background-color:   rgb(39, 167, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.humadity_img{
+    height: 50px;
+    width: 50%;
+    background-color: rgba(238, 238, 19, 0.829);
+    display: flex;
+    align-items: center;
+}
+.humadity_text{
+    height: 50px;
+    width: 40%;
+    background-color:  rgba(238, 238, 19, 0.829);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.imgwind{
+    height: 60px;
+    width: 70px;
+}
+/* .para{display: inline;
+    padding: 30px;
+} */
+#pic{
+    height: 50px;
+    width: 50px;
+}
+#date{
+    display: inline;
+}

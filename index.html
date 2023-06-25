@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="input">
+                <input type="text" id="input" value="Please enter city">
+                     <button onclick="search()">
+                        <!-- <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> --> 
+                        <img src="images/search2.svg" alt="" id="searchpic"> 
+                    </button>
+                
+           
+            </div>
+            <div class="countryname">
+                <h1 id="cityname"></h1>
+                <h2 id="country_name"></h2>
+                <p id="day"></p><p id="date"></p><span id="tarikh" ></span>
+            </div>
+            <div class="temp">
+                <div  id="imgMain" class="main_img">
+                    <!-- <img id="mainImg" class="mainimg" src="" alt=""> -->
+                </div>
+
+                <div class="currentTemp">
+                    <div>
+                    <h1 id="temp"></h1>
+                     <p id="system"></p>
+                     <p id="feel"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clouds">
+                <div class="cloud_img">
+                    <img src="images/cloudy.svg" alt="" class="imgwind">
+                    <p>Cloud</p>
+                </div>
+                <div class="cloud_text">
+                    <p id="cloud_text"></p>
+                </div>
+            </div>
+            <div class="wind">
+                <div class="wind_img"> 
+                    <img src="images/wind.svg" alt="" class="imgwind"><p class="para">Wind</p>
+                </div>
+
+
+                <div class="wind_text">
+                    <p id="wind_text"></p>
+                </div>
+            </div>
+            <div class="humadity">
+                <div class="humadity_img">
+                    <img src="images/4148460.png" height="20px" width="20px" id="pic" alt=""  class="imgwind">
+                    <p>Humadity</p>
+                </div>
+                <div class="humadity_text">
+                    <p id="humadity_text"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -7,8 +7,8 @@ body{
 }
 
 .container{
-    /* background-image: linear-gradient(120deg,rgb(250, 230, 176),rgb(255, 199, 47)); */
-    background-image: linear-gradient(120deg,rgb(93, 183, 224),rgb(184, 202, 80));
+    background-image: linear-gradient(120deg,rgb(255, 244, 212),rgb(255, 199, 47));
+    /* background-image: linear-gradient(120deg,rgb(93, 183, 224),rgb(184, 202, 80)); */
     /* background-image: linear-gradient(120deg,rgb(127, 204, 240),rgb(105, 203, 228)); */
     height: 100vh;
     width: 100vw;
@@ -37,7 +37,7 @@ body{
     padding: 5px;
 }
 #searchpic{
-    height:20px ;
+    height:30px ;
     width: 30px;
     border-radius: 100%;
     background-color: white;

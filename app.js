@@ -46,7 +46,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=24.887296&lon=67.0564
     console.log(pisSys);
     if (pisSys=='Clouds') {
         console.log('clouds')
-         document.getElementById('imgMain').innerHTML=`<img id="mainImg" class="mainimg" src='images/cloudy.svg' alt="">`
+         document.getElementById('imgMain').innerHTML=`<img id="mainImg" class="mainimg" src='images/overcast.svg' alt="">`
      }
     
      if (pisSys==='Rain') {
@@ -101,7 +101,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${fullName}&appid=bb819
     feelLike.innerHTML="Feels like"+Math.round(res.main.feels_like);
     if (imgSys=='Clouds') {
         console.log('clouds')
-         document.getElementById('imgMain').innerHTML=`<img id="mainImg" class="mainimg" src='images/cloudy.svg' alt="">`
+         document.getElementById('imgMain').innerHTML=`<img id="mainImg" class="mainimg" src='images/overcast.svg' alt="">`
      }
     
      if (imgSys==='Rain') {
